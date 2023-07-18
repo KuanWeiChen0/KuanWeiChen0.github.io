@@ -1,0 +1,794 @@
+<!doctype html>
+<!--
+	Photogenic by FreeHTML5.co
+	URL: https://freehtml5.co
+-->
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!-- owl carousel css-->
+    <link rel="stylesheet" href="owl-carousel/assets/owl.carousel.min.css" type="text/css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Kuan-Wei Chen | Pianist</title>
+    <style>
+        .navbar-nav {
+            display: flex;
+        }
+
+        .nav-item {
+            position: relative;
+            height: 60px;
+            align-items: center;
+            justify-items: center;
+            list-style-type: none;
+        }
+
+        .nav-link {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            line-height: 20px;
+        }
+
+        .navbar-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .navbar-nav li {
+            display: inline-block;
+        }
+
+        .navbar-nav li a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #f7f3f3;
+        }
+
+        .navbar-nav .dropdown:hover .bio-menu {
+            display: block;
+        }
+
+        .navbar-nav .bio-menu {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f945;
+            min-width: 100px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .navbar-nav .bio:hover .bio-menu {
+             display: block;
+        }
+
+        .navbar-nav .bio-menu li {
+            display: block;
+        }
+
+        .navbar-nav .bio-menu li a {
+            padding: 10px;
+            color: white;
+        }
+
+        .navbar-nav .bio-menu li a:hover {
+            background-color: #f1f1f1;
+            color: #0e0e0e;
+        }
+        @media screen and (max-width: 1199px) {
+            .navbar-nav .bio-menu {
+                left: 25%;
+                top: 5px;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            .navbar-nav .bio-menu {
+                left: 40%;
+                top: 5px;
+            }
+        }
+        
+        .nav-item{
+            position: relative;
+            height: 60px;
+            align-items: center;
+            justify-items: center;
+        }
+        ul {  
+            margin:0;
+            padding:0;
+            list-style-type: none;
+        }
+        @font-face {
+            font-family: 'Dan';
+            src: url('./fonts/DancingScript-Bold.ttf') format("truetype"),
+            /* url('./fonts/DancingScript-Medium.ttf') format("truetype"),
+            url('./fonts/DancingScript-Regular.ttf') format("truetype"),
+            url('./fonts/DancingScript-SemiBold.ttf') format("truetype"),
+            url('./fonts/DancingScript-VariableFont_wght.ttf') format("truetype"), */
+                    /* url('./fonts/Helvetica.eot') format("embedded-opentype"); */
+            }
+            .actPic {
+            border-bottom: #95877b 1px solid;
+            text-align: center;
+            width: 100%;
+            height: auto; /* 調整為自動高度 */
+            position: relative;
+        }
+        @media (max-width: 600px) {
+        .actPic img {
+            width: 100%;
+            height: 100%;
+            /* height: auto; */
+            position: relative;
+            display: block;
+            content: url(./photo/0265.jpg);
+            /* background-image: url(./photo/0089_2.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100%; */
+        }
+        }
+        .actPic2 {
+            border-bottom: #95877b 1px solid;
+            text-align: center;
+            width: 100%;
+            height: 100%; /* 調整為自動高度 */
+            position: relative;
+        }
+        @media (max-width: 600px) {
+        .actPic2 img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: relative;
+            content: url(./photo/0239.jpg);
+        }
+        }
+        .actPic3 {
+            border-bottom: #95877b 1px solid;
+            text-align: center;
+            width: 100%;
+            height: auto; /* 調整為自動高度 */
+            position: relative;
+        }
+        @media (max-width: 600px) {
+        .actPic3 img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: relative;
+            content: url(./photo/0097.jpg);
+        }
+        }
+        .bigt{
+            text-transform: uppercase;
+            font-size: 12px;
+        }
+
+        #titles{
+            font-size: 18px;
+            color: black;
+            text-align: justify ;
+            margin: 10px;
+            line-height: 28px;
+        }
+        #bi0{
+            font-size: 20px;
+            color: black;
+            text-align: justify ;
+            margin: 10px;
+            line-height: 28px;
+            font-weight: 700;
+        }
+        @media (max-width: 600px) {
+        #titles {
+            font-size: 10px;
+            line-height: 24px;
+            margin: 5px;
+        }
+        #bi0{
+            font-size: 17px;
+            color: black;
+            text-align: justify ;
+            margin: 10px;
+            line-height: 18px;
+            font-weight: 700;
+            letter-spacing: 0px;
+        }
+            }
+        @media (max-width: 1200px){
+            .navbar-nav .float-left .social-links ul{
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="fh5co-hero-carousel" class="carousel slide header" data-bs-ride="carousel">
+        <nav class="navbar fixed-top navbar-expand-xl">
+            <div class="container">
+                <a class="navbar-brand mobile-logo"  style="color: aliceblue;"> Kuan-Wei Chen | Pianist </a> 
+                <!-- <img src="images/logo.png" alt="Vista Pro" /> -->
+                <button class="navbar-toggler" data-target="#my-nav" onclick="myFunction(this)" data-toggle="collapse">
+                    <span class="bar1"></span> <span class="bar2"></span> <span class="bar3"></span> </button>
+
+                <div id="my-nav" class="collapse navbar-collapse">
+                    <div class="col-xl-4">
+                        <ul class="navbar-nav mx-auto logo-desktop">
+                            <li class="nav-item active" style="padding: 10px;">
+                                <div style="font-size: 28px; color: aliceblue; ">Kuan-Wei Chen | Pianist</div>
+                                <!-- <a class="nav-link" href="#">Kuan-Wei Chen | Pianist</a> -->
+                                <!-- <img src="images/logo.png" alt="Vista Pro" /> -->
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="row" style="margin-left: 6px; height: 40px; text-align: center; margin-top: 10px;">
+                            <div class="contact">
+                                <!-- <p class="text-left follow">Follow Us:</p> -->
+                                <ul class="navbar-nav float-left social-links" style="flex-direction: row;">
+
+                                    <div class="text-left follow" style="color: aliceblue; padding-top: 6px; justify-content: center; font-family: Optima-Regular;"> Contact : </div>
+                                    
+                                    <div class="col-md-2" style="padding: 0;">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="https://www.facebook.com/profile.php?id=100000727636441 " style="padding: 7px;"><i class="fab fa-facebook-f"></i></a>
+                                        </li>
+                                    </div>
+                                    <div class="col-md-2" style="padding: 0;">
+                                        <li class="nav-item"><a class="nav-link" href="mailto:kuanweichen2000@outlook.com" style="padding: 7px;"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+                                        </li>
+                                    </div>
+                                    <div class="col-md-2" style="padding: 0;">
+                                        <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/kuanwei_0131/?igshid=YmMyMTA2M2Y%3D" style="padding: 7px;"><i class="fab fa-instagram"></i></a>
+                                        </li>
+                                    </div>
+                                    <div class="col-md-2" style="padding: 0;">
+                                        <li class="nav-item"><a class="nav-link" href="https://www.youtube.com/@kuan-weichen7441" style="padding: 7px;"><i class="fab fa-youtube"></i></a>
+                                        </li>
+                                    </div>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-5">
+                        <ul class="navbar-nav menu-links bigt">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item bio">
+                                <a class="nav-link" href="#" >Biography</a>
+                                    <ul class="bio-menu" >
+                                    <li><a href="./index2-ch.html">中文</a></li> 
+                                    <li><a href="./index2.html" style="font-family: Arial, Helvetica, sans-serif; font-weight: 600; color: #ffffff;"></a>>English</a></li> 
+                                    </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index3_2.html">Concerts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index4.html">Repertoire</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index5.html">Videos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index6_3.html">Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index7_2.html">Contact</a>
+                            </li>
+                            
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <!-- <div class="actPic"><img src="https://i.ibb.co/nCPh8ZD/0089.jpg" alt="home-bg">   </div>  class="d-block w-75 home-bg"-->
+                
+                <div class="actPic">
+                    <img src="./photo/02.jpg"  class="d-block w-100 home-bg" alt="home-bg" alt="圖片描述">
+                    
+                </div>
+                <!-- <div class="actPic"><img  srcset="./photo/0089.jpg  2000w, ./photo/0089_2.jpg  300w"  class=" d-block w-100 home-bg " alt="home-bg"> </div> -->
+               
+                
+                <!-- <div class="carousel-caption d-md-block">   src="./photo/0089.jpg" -->
+                    <!-- <p class="frst-hrd"></p>
+                    <h5></h5>
+                    <p></p> -->
+
+                <!-- </div> -->
+
+
+            </div>
+            <div class="carousel-item">
+                <!-- <div class="actPic"><img  alt="home-bg" src="https://i.ibb.co/vjfPJ9G/0265.jpg">   </div> -->
+                <!-- <div class="actPic"><img  srcset="./photo/02.jpg 1200w, ./photo/02_2.jpg 400w " class="d-block w-100 home-bg" alt="home-bg"> </div> -->
+                <div class="actPic2">
+                    <img src="./photo/0199.jpg"  class="d-block w-100 home-bg" alt="home-bg" alt="圖片描述">
+                </div>
+
+                <!-- <div class="carousel-caption d-md-block"> src="./photo/02.jpg"-->
+                    <!-- <p class="frst-hrd">Everyone is Photogenic</p>
+                    <h5>Today’s SPECIAL MOMENTS.</h5>
+                    <p>Creating a timeless look, coupled with a flawless moment</p> -->
+
+                <!-- </div> -->
+            </div>
+            <div class="carousel-item">
+                <!-- <div class="actPic"><a href="https://ibb.co/TLWzqpH"><img src="https://i.ibb.co/g9kbh4g/0299.jpg"  alt="home-bg"></a></div>
+                 -->
+                 <!-- <div class="actPic"><img  srcset="./photo/03.jpg 1200w, ./photo/03_2.jpg 400w "  class="d-block w-100 home-bg" alt="home-bg"> </div> -->
+                 <div class="actPic3">
+                    <!-- <img src="./photo/03.jpg "  class="d-block w-100 home-bg" alt="home-bg" alt="圖片描述"> -->
+                    <img src="./photo/0089.jpg"  class="d-block w-100 home-bg" alt="home-bg" alt="圖片描述">
+                </div>
+                <!-- <div class="carousel-caption d-md-block"> src="./photo/03.jpg" -->
+                    <!-- <p class="frst-hrd">Everyone is Photogenic</p>
+                    <h5>Today’s SPECIAL MOMENTS.</h5>
+                    <p>Creating a timeless look, coupled with a flawless moment</p> -->
+
+                <!-- </div> -->
+            </div>
+            <!-- <div class="scroll-button">
+                <p>Scroll down to see more...</p>
+                <a href="./index2.html" class="page-scroll">
+                    <img src="images/arrows-down.png" alt="arrow down" />
+                </a>
+
+            </div> -->
+        </div>
+        <ul class="carousel-indicators">
+            <li class="active" data-target="#fh5co-hero-carousel" data-slide-to="0" aria-current="location"></li>
+            <li data-target="#fh5co-hero-carousel" data-slide-to="1"></li>
+            <li data-target="#fh5co-hero-carousel" data-slide-to="2"></li>
+        </ul>
+    </div>
+
+    <!-- fh5co-about-us -->
+    <div class="container-fluid " id="about-us"> 
+        <div class="container"  >
+            <div class="row">
+                <div class="col-lg-4">
+                        
+                    <svg class="back-bg" viewBox="0 0 535 618">
+                        <defs>
+                            <linearGradient id="PSgrad_0" x1="0%" x2="100%" y1="0%" y2="0%">
+                                <stop offset="0%" stop-color="rgb(88,192,255)" stop-opacity="1" />
+                                <stop offset="100%" stop-color="rgb(18,112,228)" stop-opacity="1" />
+                            </linearGradient>
+
+                        </defs>
+                        <!-- <path fill-rule="evenodd" fill="rgb(18, 112, 228)"
+                            d="M6.000,-0.000 L499.000,-0.000 C502.314,-0.000 505.000,2.686 505.000,6.000 L505.000,612.000 C505.000,615.314 502.314,618.000 499.000,618.000 L6.000,618.000 C2.686,618.000 -0.000,615.314 -0.000,612.000 L-0.000,6.000 C-0.000,2.686 2.686,-0.000 6.000,-0.000 Z" /> -->
+                        <!-- <path fill="url(#PSgrad_0)"
+                            d="M6.000,-0.000 L499.000,-0.000 C502.314,-0.000 505.000,2.686 505.000,6.000 L505.000,612.000 C505.000,615.314 502.314,618.000 499.000,618.000 L6.000,618.000 C2.686,618.000 -0.000,615.314 -0.000,612.000 L-0.000,6.000 C-0.000,2.686 2.686,-0.000 6.000,-0.000 Z" /> -->
+                    </svg>
+
+                    <div class="owl-carousel owl-carousel1 owl-theme">
+                        <div>
+                            <br>
+                            <img src="https://i.ibb.co/1qRqKzB/0123.jpg" alt="" class="img-fluid" />
+                        </div>
+                        <!-- <div>
+                            <img src="images/slide.png" alt="" class="img-fluid" />
+                        </div>
+                        <div>
+                            <img src="images/slide.png" alt="" class="img-fluid" />
+                        </div> -->
+                    </div>
+                </div>
+            
+                <div class="col-lg-7" id="titles">
+                    <!-- <div class="about-us-content"> </div>-->
+                    <!-- <div class="box" > -->
+                        <br>
+                        
+                        <div style="color:#c5ab6b; font-size: 30px; font-weight: 700;">Biography</div>
+                        
+                        <div id="bi0">
+                        <br>
+                        
+                            <div >
+                                Kuan-Wei Chen, born in 2000, began his musical journey at the age of 5 with his first piano lessons. He studied under Lu-Ning Chen for six years before continuing his studies with musicians such as Yuzhen Tsai, Prof. Wei-Wei Lee, Pei-Chi Lin, Prof. Yi Fan-Chiang, and Paul Kern. At the age of 16, he was admitted to the Hochschule für Musik Hanns Eisler Berlin, Germany, where he studied under Prof. Konrad Maria Engel.</div>
+                            <br>
+                            <div >
+                                In 2021, Kuan-Wei completed his bachelor's degree and is currently pursuing a master's degree at the University of Music and Performing Arts Vienna under the guidance of Prof. Anna Malikova.</div>
+                            <br>
+                            <div >
+                                In 2009, Kuan-Wei made his solo debut as a pianist, performing with the Taipei Century Symphony Orchestra. In the following years, he participated in various masterclasses with musicians such as Arie Vardi, Robert Levin, Bernd Goetzke, Alexei Lubimov, Claudio-Martinez-Mehner, and others.
+
+                            </div>
+                            <br>
+                            <div >
+                                In 2015, he received the third prize in the adult category of the 4th Macau-Asia Pacific Youth Piano Competition and held his first piano recital at the Taoyuan Concert Hall. In 2017, he achieved first prize at the 6th International Piano Competition in Troisdorf, Germany. Additionally, in 2018, he took third place in the Flute-Piano Duo Competition at the Usedom Music Festival. Notably, he was selected as part of the 2020-2021 International Music Talent Project by the National Taiwan Symphony Orchestra in September 2019. In 2022, he also received the prestigious New Taipei Music Rising Star Award. 
+                            </div>
+                            <br>
+                        </div>
+                    
+                        <!-- Kuan-Wei Chen, born in 2000, began his musical journey at the age of 5 with his first piano lessons. He studied under Lu-Ning Chen for six years before continuing his studies with musicians such as Yuzhen Tsai, Prof. Wei-Wei Lee, Pei-Chi Lin, Prof. Yi Fan-Chiang, and Paul Kern. At the age of 16, he was admitted to the Hochschule für Musik Hanns Eisler Berlin, Germany, where he studied under Prof. Konrad Maria Engel.
+
+In 2021, Kuan-Wei completed his bachelor's degree and is currently pursuing a master's degree at the University of Music and Performing Arts Vienna under the guidance of Prof. Anna Malikova.
+
+In 2009, Kuan-Wei made his solo debut as a pianist, performing with the Taipei Century Symphony Orchestra. In the following years, he participated in various masterclasses with musicians such as Arie Vardi, Robert Levin, Bernd Goetzke, Alexei Lubimov, Claudio-Martinez-Mehner, and others.
+
+In 2015, he received the third prize in the adult category of the 4th Macau-Asia Pacific Youth Piano Competition and held his first piano recital at the Taoyuan Concert Hall. In 2017, he achieved first prize at the 6th International Piano Competition in Troisdorf, Germany. Additionally, in 2018, he took third place in the Flute-Piano Duo Competition at the Usedom Music Festival. Notably, he was selected as part of the 2020-2021 International Music Talent Project by the National Taiwan Symphony Orchestra in September 2019. In 2022, he also received the prestigious New Taipei Music Rising Star Award. -->
+                        
+                    
+                        
+                    <!-- </div> -->
+                    <!-- </div> -->
+                    
+
+                </div>                
+            </div>
+        </div>
+        <!-- </div> -->
+    </div>
+
+    <!--/*
+    <div class="container-fluid fh5co-portfolio" id="portfolio">
+        <div class="container">
+            <h2>OUR PORTFOLIO</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad </p>
+            <h3>FILTER BY:</h3>
+            <div class="portfolio-tab portfolioFilter">
+                <ul>
+                    <li><a href="#" data-filter="*" class="active">ALL</a>
+                    </li>
+                    <li><a href="#" data-filter=".landscape">landscape</a>
+                    </li>
+                    <li><a href="#" data-filter=".green">Green</a>
+                    </li>
+                    <li><a href="#" data-filter=".building">Building</a>
+                    </li>
+                    <li><a href="#" data-filter=".wedding">Weeding</a>
+                    </li>
+                    <li><a href="#" data-filter=".nature">Nature</a>
+                    </li>
+                    <li><a href="#" data-filter=".landscape">landscape</a>
+                    </li>
+                    <li><a href="#" data-filter=".green">Green</a>
+                    </li>
+                    <li><a href="#" data-filter=".building">Building</a>
+                    </li>
+                    <li><a href="#" data-filter=".wedding">Weeding</a>
+                    </li>
+                    <li><a href="#" data-filter=".nature">Nature</a>
+                    </li>
+                    <li><a href="#" data-filter=".landscape">landscape</a>
+                    </li>
+                    <li><a href="#" data-filter=".green">Green</a>
+                    </li>
+                    <li><a href="#" data-filter=".building">Building</a>
+                    </li>
+                    <li><a href="#" data-filter=".wedding">Weeding</a>
+                    </li>
+                    <li><a href="#" data-filter=".nature">Nature</a>
+                    </li>
+                    <li><a href="#" data-filter=".landscape">landscape</a>
+                    </li>
+                    <li><a href="#" data-filter=".green">Green</a>
+                    </li>
+                    <li><a href="#" data-filter=".building">Building</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="row">
+
+                <div class="portfolioContainer">
+
+                    <div class="gallary building nature green">
+                        <img src="images/img1.png" alt="">
+                        <div class="card-img-overlay">
+                            <div class="top-buttons clearfix">
+                                <a href="#"><span class="img-icon"><img src="images/share.png"
+                                            alt="share icon" /></span> <span class="txt">Share Now</span></a>
+
+                                <a href="#"><span class="img-icon"><img src="images/heart.png"
+                                            alt="share icon" /></span> <span class="txt">190+ Likes</span></a>
+                            </div>
+
+                            <div class="top-buttons bottom-buttons clearfix">
+                                <a href="#"><span class="txt">Contact Now</span></a>
+
+                                <a href="#"><span class="img-icon"><img src="images/eye.png" alt="share icon" /></span>
+                                    <span class="txt">Full View</span></a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="gallary center-img wedding">
+                        <img src="images/img2.png" class="half-height" alt="">
+                        <div class="card-img-overlay">
+                            <div class="top-buttons clearfix">
+                                <a href="#"><span class="img-icon"><img src="images/share.png"
+                                            alt="share icon" /></span> <span class="txt">Share Now</span></a>
+
+                                <a href="#"><span class="img-icon"><img src="images/heart.png"
+                                            alt="share icon" /></span> <span class="txt">190+ Likes</span></a>
+                            </div>
+
+                            <div class="top-buttons bottom-buttons clearfix">
+                                <a href="#"><span class="txt">Contact Now</span></a>
+
+                                <a href="#"><span class="img-icon"><img src="images/eye.png" alt="share icon" /></span>
+                                    <span class="txt">Full View</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallary building">
+
+                        <img src="images/img4.png" alt="">
+                        <div class="card-img-overlay">
+                            <div class="top-buttons clearfix">
+                                <a href="#"><span class="img-icon"><img src="images/share.png"
+                                            alt="share icon" /></span> <span class="txt">Share Now</span></a>
+
+                                <a href="#"><span class="img-icon"><img src="images/heart.png"
+                                            alt="share icon" /></span> <span class="txt">190+ Likes</span></a>
+                            </div>
+
+                            <div class="top-buttons bottom-buttons clearfix">
+                                <a href="#"><span class="txt">Contact Now</span></a>
+
+                                <a href="#"><span class="img-icon"><img src="images/eye.png" alt="share icon" /></span>
+                                    <span class="txt">Full View</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallary center-img landscape nature">
+                        <img src="images/img3.png" class="half-height" alt="">
+                        <div class="card-img-overlay">
+                            <div class="top-buttons clearfix">
+                                <a href="#"><span class="img-icon"><img src="images/share.png"
+                                            alt="share icon" /></span> <span class="txt">Share Now</span></a>
+
+                                <a href="#"><span class="img-icon"><img src="images/heart.png"
+                                            alt="share icon" /></span> <span class="txt">190+ Likes</span></a>
+                            </div>
+
+                            <div class="top-buttons bottom-buttons clearfix">
+                                <a href="#"><span class="txt">Contact Now</span></a>
+
+                                <a href="#"><span class="img-icon"><img src="images/eye.png" alt="share icon" /></span>
+                                    <span class="txt">Full View</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallary">
+                        <img src="images/img5.png" alt="">
+                        <div class="card-img-overlay">
+                            <div class="top-buttons clearfix">
+                                <a href="#"><span class="img-icon"><img src="images/share.png"
+                                            alt="share icon" /></span> <span class="txt">Share Now</span></a>
+
+                                <a href="#"><span class="img-icon"><img src="images/heart.png"
+                                            alt="share icon" /></span> <span class="txt">190+ Likes</span></a>
+                            </div>
+
+                            <div class="top-buttons bottom-buttons clearfix">
+                                <a href="#"><span class="txt">Contact Now</span></a>
+
+                                <a href="#"><span class="img-icon"><img src="images/eye.png" alt="share icon" /></span>
+                                    <span class="txt">Full View</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallary center-img landscape">
+                        <img src="images/img6.png" alt="">
+                        <div class="card-img-overlay">
+                            <div class="top-buttons clearfix">
+                                <a href="#"><span class="img-icon"><img src="images/share.png"
+                                            alt="share icon" /></span> <span class="txt">Share Now</span></a>
+
+                                <a href="#"><span class="img-icon"><img src="images/heart.png"
+                                            alt="share icon" /></span> <span class="txt">190+ Likes</span></a>
+                            </div>
+
+                            <div class="top-buttons bottom-buttons clearfix">
+                                <a href="#"><span class="txt">Contact Now</span></a>
+
+                                <a href="#"><span class="img-icon"><img src="images/eye.png" alt="share icon" /></span>
+                                    <span class="txt">Full View</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="gallary building nature">
+                        <img src="images/img4.png" alt="">
+                        <div class="card-img-overlay">
+                            <div class="top-buttons clearfix">
+                                <a href="#"><span class="img-icon"><img src="images/share.png"
+                                            alt="share icon" /></span> <span class="txt">Share Now</span></a>
+
+                                <a href="#"><span class="img-icon"><img src="images/heart.png"
+                                            alt="share icon" /></span> <span class="txt">190+ Likes</span></a>
+                            </div>
+
+                            <div class="top-buttons bottom-buttons clearfix">
+                                <a href="#"><span class="txt">Contact Now</span></a>
+
+                                <a href="#"><span class="img-icon"><img src="images/eye.png" alt="share icon" /></span>
+                                    <span class="txt">Full View</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row portfolioFilter">
+                <ul class="indicators">
+                    <li><a href="#" data-filter=".landscape" class="active"></a>
+                    </li>
+                    <li><a href="#" data-filter=".green"></a>
+                    </li>
+                    <li><a href="#" data-filter=".building"></a>
+                    </li>
+                    <li><a href="#" data-filter=".wedding"></a>
+                    </li>
+                    <li><a href="#" data-filter=".nature"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+     -->
+    <!--
+    <div class="container-fluid fh5co-news" id="news">
+        <div class="container">
+            <h2>OUR NEWS</h2>
+            <div class="row">
+                <div class="owl-carousel owl-carousel2 owl-theme">
+                    <div>
+                        <div class="card text-center"> <img class="card-img-top" src="images/news1.png" alt="">
+                            <div class="card-body text-left pr-0 pl-0">
+                                <h5>How to take a Awosome photo Of
+                                    Groups! </h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="card text-center"> <img class="card-img-top" src="images/news2.png" alt="">
+                            <div class="card-body text-left pr-0 pl-0">
+                                <h5>How to take a Awosome photo Of
+                                    Groups! </h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="card text-center"> <img class="card-img-top" src="images/news3.png" alt="">
+                            <div class="card-body text-left pr-0 pl-0">
+                                <h5>How to take a Awosome photo Of
+                                    Groups! </h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="container-fluid fh5co-footer">
+        <div class="container" id="contact">
+            <div class="row">
+                <div class="col-lg-5">
+                    <h2>CONTACT US TODAY NOW</h2>
+                    <p class="light">
+                        If you are looking for a Photographer
+                    </p>
+                    <p>
+                        <span class="email"><img src="images/email.png"
+                                alt="email icon" /></span><b>contact@example.com</b>
+                    </p>
+                    <p>
+                        <span class="phone"><img src="images/phone.png" alt="phone icon" /></span><b>+123-456-7890</b>
+                    </p>
+                    <h3>We Are Social:</h3>
+                    <ul class="navbar-nav float-left social-links footer-social">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.facebook.com/fh5co"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-pinterest-p"></i></a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="https://twitter.com/fh5co"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-google-plus-g"></i></a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="form-box">
+                        <h4>What would you like to talk about</h4>
+                        <p>We'd Love to Hear From you !</p>
+                        <hr />
+                        <table class="table table-light table-borderless">
+                            <tr>
+                                <td><input type="text" class="form-control" placeholder="Name...">
+                                </td>
+
+                                <td><input type="text" class="form-control" placeholder="Email address">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="2"><textarea class="form-control" placeholder="You Message"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <button type="submit">
+                                        SUBMIT NOW
+                                    </button>
+
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </footer>
+    -->
+    <div class="container-fluid copy">
+        <div class="col-lg-12">
+            <p>&copy; Editor by <a href="https://s07362022.github.io/" target="_blank" style="color: #060606;">Harden Li</a></p>
+            <p>&copy; Design by FreeHTML5.co</a>.</p>
+            
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/isotope-docs.min.js?6"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

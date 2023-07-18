@@ -1,0 +1,216 @@
+.group2-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.group2-group2 {
+  width: 830px;
+  height: 938.4996948242188px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.group2-line1 {
+  top: 0px;
+  left: 396.5166015625px;
+  width: 938px;
+  height: 5px;
+  position: absolute;
+}
+.group2-text {
+  top: 155.5px;
+  left: 85px;
+  color: rgba(143, 144, 68, 1);
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Tomorrow;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.group2-text02 {
+  top: 219px;
+  left: 66px;
+  color: rgba(0, 0, 0, 1);
+  width: 239px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Tomorrow;
+  font-weight: 400;
+  line-height: 14px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.group2-text11 {
+  top: 464.5px;
+  left: 59px;
+  color: rgba(143, 144, 68, 1);
+  width: 242px;
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Tomorrow;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.group2-text13 {
+  top: 544px;
+  color: rgba(143, 144, 68, 1);
+  right: 18px;
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Tomorrow;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.group2-text15 {
+  top: 519px;
+  left: 19px;
+  color: rgba(0, 0, 0, 1);
+  width: 298px;
+  height: auto;
+  position: absolute;
+  font-size: 14px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Tomorrow;
+  font-weight: 400;
+  line-height: 14px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.group2-frameiconcommentsquare {
+  top: 137.5px;
+  left: 19px;
+  width: 346px;
+  height: 241.5px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.group2-vector {
+  top: 0px;
+  left: 0px;
+  width: 346px;
+  height: 241px;
+  position: absolute;
+}
+.group2-frameiconcommentsquare1 {
+  top: 447px;
+  left: 0px;
+  width: 352px;
+  height: 256px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.group2-vector1 {
+  top: 0px;
+  left: 0px;
+  width: 352px;
+  height: 256px;
+  position: absolute;
+}
+.group2-text28 {
+  top: 237.5px;
+  left: 502px;
+  color: rgba(143, 144, 68, 1);
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Tomorrow;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.group2-text30 {
+  top: 289px;
+  left: 502px;
+  color: rgba(0, 0, 0, 1);
+  width: 274px;
+  height: auto;
+  position: absolute;
+  font-size: 14px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Tomorrow;
+  font-weight: 400;
+  line-height: 14px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.group2-text43 {
+  top: 595px;
+  color: rgba(0, 0, 0, 1);
+  right: 77px;
+  width: 221px;
+  height: auto;
+  position: absolute;
+  font-size: 14px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Tomorrow;
+  font-weight: 400;
+  line-height: 14px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.group2-frameiconcommentsquare2 {
+  top: 219.5px;
+  left: 823px;
+  width: 374px;
+  height: 254.5px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.group2-vector2 {
+  top: -12px;
+  left: -356px;
+  width: 374px;
+  height: 254px;
+  position: absolute;
+}
+.group2-frameiconcommentsquare3 {
+  top: 490px;
+  left: 830px;
+  width: 375px;
+  height: 246px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.group2-vector3 {
+  left: -365px;
+  width: 375px;
+  bottom: -28px;
+  height: 246px;
+  position: absolute;
+}

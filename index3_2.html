@@ -1,0 +1,850 @@
+<!doctype html>
+<!--
+	Photogenic by FreeHTML5.co
+	URL: https://freehtml5.co
+-->
+<html lang="en">
+
+<head>
+    <!-- <title>Rosy Silky Gazelle</title> -->
+    
+    <meta property="og:title" content="Rosy Silky Gazelle" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <style data-tag="default-style-sheet">
+        .navbar-nav a { /*選單樣式設定*/
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            line-height: 20px;
+        }
+        .navbar-nav ul li:last-child {
+            border-bottom: none;
+        }
+        .navbar-nav > li:last-child {
+            border-right: none;
+        }
+        .navbar-nav ul { /*隱藏次選單*/
+            left: -99999px; /*設定成最大的負數，將元素放到可視範圍外*/
+            opacity: 0; /*完全透明*/
+            -webkit-transition: opacity 0.6s;
+            transition: opacity 0.6s;
+        }
+        .navbar-nav li:hover > ul { /*滑鼠移入展開選單*/
+            opacity: 1;
+            -webkit-transition: opacity 0.6s;
+            transition: opacity 0.6s;
+            left: -1px;
+            border-right: 5px;
+        }
+        .navbar-nav ul li:hover > ul { /*第二層之後的選單位置*/
+            bottom: 90%;
+        }
+        
+        .nav-item{
+            position: relative;
+            height: 60px;
+            align-items: center;
+            justify-items: center;
+        }
+        ul {  
+            margin:0;
+            padding:0;
+            list-style-type: none;
+        }
+        #date1{
+            font-size: 32px;
+            text-align: center;
+            color: black;
+            /* text-align: justify ; */
+            /* margin: 10px;
+            line-height: 28px;
+            text-align: center */
+        }
+        #name1 {
+            font-size: 20px;
+            text-align: center;
+        }
+        #tt1{
+            font-size: 42px;
+            color: rgb(146, 99, 42); 
+            text-align: center;
+        }
+        
+        @media (max-width: 600px) {
+        #date1 {
+            font-size: 20px;
+            text-align: center;
+            /* line-height: 24px;
+            margin: 5px; */
+            /* text-align: center */
+        }
+        #name1 {
+            font-size: 16px;
+            text-align: center;
+        }
+        #tt1{
+            font-size: 38px;
+            color: rgb(146, 99, 42); 
+            /* margin-left: 33%; */
+            text-align: center;
+           
+        }
+            }
+
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+      
+
+      /* body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      } */
+      .bigt{
+            text-transform: uppercase;
+            font-size: 12px;
+        }
+      .frame {
+        width: 90%;
+        margin: 40px auto;
+        text-align: center;
+        }
+        button {
+        margin: 20px;
+        }
+        .custom-btn {
+        width: 100px;
+        height: 40px;
+        color: #fff;
+        border-radius: 5px;
+        padding: 10px 25px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 500;
+        background: transparent;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+        box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+        7px 7px 20px 0px rgba(0,0,0,.1),
+        4px 4px 5px 0px rgba(0,0,0,.1);
+        outline: none;
+        }
+        /* 3 */
+        .btn-3 {
+        background: #c5ab6b;
+        background: linear-gradient(0deg,#c5ab6b 0%, #c5ab6b 100%);
+        width: 80px;
+        height: 40px;
+        line-height: 42px;
+        padding: 0;
+        border: none;
+        
+        }
+        .btn-3 span {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+        }
+        .btn-3:before,
+        .btn-3:after {
+        position: absolute;
+        content: "";
+        right: 0;
+        top: 0;
+        background: #c5ab6b;
+        transition: all 0.3s ease;
+        }
+        .btn-3:before {
+        height: 0%;
+        width: 2px;
+        }
+        .btn-3:after {
+        width: 0%;
+        height: 2px;
+        }
+        .btn-3:hover{
+        background: transparent;
+        box-shadow: none;
+        }
+        .btn-3:hover:before {
+        height: 100%;
+        }
+        .btn-3:hover:after {
+        width: 100%;
+        }
+        .btn-3 span:hover{
+        color: #c5ab6b;
+        }
+        .btn-3 span:before,
+        .btn-3 span:after {
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: 0;
+        background: #c5ab6b;
+        transition: all 0.3s ease;
+        }
+        .btn-3 span:before {
+        width: 2px;
+        height: 0%;
+        }
+        .btn-3 span:after {
+        width: 0%;
+        height: 2px;
+        }
+        .btn-3 span:hover:before {
+        height: 100%;
+        }
+        .btn-3 span:hover:after {
+        width: 100%;
+        }
+        @media (max-width: 600px){
+            .custom-btn {
+        width: 80px;
+        height: 40px;
+        color: #fff;
+        border-radius: 5px;
+        padding: 10px 25px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 500;
+        background: transparent;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+        box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+        7px 7px 20px 0px rgba(0,0,0,.1),
+        4px 4px 5px 0px rgba(0,0,0,.1);
+        outline: none;
+        }
+        /* 3 */
+        .btn-3 {
+        background: #c5ab6b;
+        background: linear-gradient(0deg,#c5ab6b 0%, #c5ab6b 100%);
+        width: 80px;
+        height: 40px;
+        line-height: 42px;
+        padding: 0;
+        border: none;
+        
+        }
+        .btn-3 span {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+        }
+        .btn-3:before,
+        .btn-3:after {
+        position: absolute;
+        content: "";
+        right: 0;
+        top: 0;
+        background: #c5ab6b;
+        transition: all 0.3s ease;
+        }
+        .btn-3:before {
+        height: 0%;
+        width: 2px;
+        }
+        .btn-3:after {
+        width: 0%;
+        height: 2px;
+        }
+        .btn-3:hover{
+        background: transparent;
+        box-shadow: none;
+        }
+        .btn-3:hover:before {
+        height: 100%;
+        }
+        .btn-3:hover:after {
+        width: 100%;
+        }
+        .btn-3 span:hover{
+        color: #c5ab6b;
+        }
+        .btn-3 span:before,
+        .btn-3 span:after {
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: 0;
+        background: #c5ab6b;
+        transition: all 0.3s ease;
+        }
+        .btn-3 span:before {
+        width: 2px;
+        height: 0%;
+        }
+        .btn-3 span:after {
+        width: 0%;
+        height: 2px;
+        }
+        .btn-3 span:hover:before {
+        height: 100%;
+        }
+        .btn-3 span:hover:after {
+        width: 100%;
+        }
+        }
+
+    </style>
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+    data-tag="font"
+  />
+
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!-- owl carousel css-->
+    <link rel="stylesheet" href="owl-carousel/assets/owl.carousel.min.css" type="text/css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Kuan-Wei Chen | Pianist</title>
+    <style>
+        .navbar-nav {
+            display: flex;
+        }
+
+        .nav-item {
+            position: relative;
+            height: 60px;
+            align-items: center;
+            justify-items: center;
+            list-style-type: none;
+        }
+
+        .nav-link {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            line-height: 20px;
+        }
+
+        .navbar-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .navbar-nav li {
+            display: inline-block;
+        }
+
+        .navbar-nav li a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #f7f3f3;
+        }
+
+        .navbar-nav .dropdown:hover .bio-menu {
+            display: block;
+        }
+
+        .navbar-nav .bio-menu {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f945;
+            min-width: 100px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .navbar-nav .bio:hover .bio-menu {
+             display: block;
+        }
+
+        .navbar-nav .bio-menu li {
+            display: block;
+        }
+
+        .navbar-nav .bio-menu li a {
+            padding: 10px;
+            color: white;
+        }
+
+        .navbar-nav .bio-menu li a:hover {
+            background-color: #f1f1f1;
+            color: #0e0e0e;
+        }
+        @media screen and (max-width: 1199px) {
+            .navbar-nav .bio-menu {
+                left: 25%;
+                top: 5px;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            .navbar-nav .bio-menu {
+                left: 40%;
+                top: 5px;
+            }
+        }
+        
+        .nav-item{
+            position: relative;
+            height: 60px;
+            align-items: center;
+            justify-items: center;
+        }
+        ul {  
+            margin:0;
+            padding:0;
+            list-style-type: none;
+        }
+        #content{
+        width:100%;
+        margin-left:auto;
+        margin-right:auto;
+        vertical-align:top;
+        font-family: serif;
+        } 
+
+        #box{
+            padding-top: 6%;
+            width:100%;
+            height: 10%;
+            padding:5px;
+            background-color:white;
+            display:inline-block;
+            vertical-align:top;
+            text-align: center;
+            /* height:600px; */
+            /* font-size: 30px; */
+            color: #333;
+
+            
+        }
+        #titles{
+            font-size: 32px;
+            color: black;
+            text-align: justify ;
+            margin: 15px;
+            /* line-height: 36px; */
+        }
+        .actPic {
+            border-bottom: #95877b 1px solid;
+            text-align: center;
+            width: 100%;
+            height: auto; /* 調整為自動高度 */
+            position: relative;
+        }
+        @media (max-width: 600px) {
+        .actPic img {
+            width: 100%;
+            height: 100%;
+            /* height: auto; */
+            position: relative;
+            display: block;
+            content: url(./photo/0265.jpg);
+            /* background-image: url(./photo/0089_2.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100%; */
+        }
+        }
+        .actPic2 {
+            border-bottom: #95877b 1px solid;
+            text-align: center;
+            width: 100%;
+            height: 100%; /* 調整為自動高度 */
+            position: relative;
+        }
+        @media (max-width: 600px) {
+        .actPic2 img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: relative;
+            content: url(./photo/0239.jpg);
+        }
+        }
+        .actPic3 {
+            border-bottom: #95877b 1px solid;
+            text-align: center;
+            width: 100%;
+            height: auto; /* 調整為自動高度 */
+            position: relative;
+        }
+        @media (max-width: 600px) {
+        .actPic3 img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: relative;
+            content: url(./photo/0097.jpg);
+        }
+        .menu-links li a {
+    color: #ffffff;
+    font-family:  Poppins-Regular, Helvetica, Arial, sans-serif;
+      /* font-family: "Gotham-Narrow-Book"; */
+    padding: 20px 7px !important;
+    border-top: 5px solid transparent;
+  }
+        }
+            /* .body {
+        color: #6a6c6f;
+        background-color: #f1f3f6;
+        margin-top: 30px;
+        } */
+
+            /* .container {
+            max-width: 960px;
+            } */
+
+            .panel-default>.panel-heading {
+            color: #333;
+            background-color: #fff;
+            border-color: #e4e5e7;
+            padding: 0;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            }
+
+            .panel-default>.panel-heading a {
+            display: block;
+            padding: 10px 15px;
+            }
+
+            .panel-default>.panel-heading a:after {
+            content: "";
+            position: relative;
+            top: 1px;
+            display: inline-block;
+            font-family: 'Glyphicons Halflings';
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            /* float: right; */
+            transition: transform .25s linear;
+            -webkit-transition: -webkit-transform .25s linear;
+            }
+
+            .panel-default>.panel-heading a[aria-expanded="true"] {
+            background-color: #eee;
+            }
+
+            .panel-default>.panel-heading a[aria-expanded="true"]:after {
+            content: "\2212";
+            -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+            }
+
+            .panel-default>.panel-heading a[aria-expanded="false"]:after {
+            content: "\002b";
+            -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+            }
+
+            .accordion-option {
+            width: 100%;
+            float: left;
+            clear: both;
+            margin: 30px 0;
+            }
+
+            .accordion-option .title {
+            font-size: 30px;
+            font-weight: bold;
+            float: left;
+            padding: 0;
+            margin: 0;
+            }
+
+            .accordion-option .toggle-accordion {
+            float: right;
+            font-size: 20px;
+            color: #6a6c6f;
+            }
+
+            .accordion-option .toggle-accordion:before {
+            content: "Expand All";
+            }
+
+            .accordion-option .toggle-accordion.active:before {
+            content: "Collapse All";
+            }
+        
+        @media (max-width: 1200px){
+            .navbar-nav .float-left .social-links ul{
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div id="fh5co-hero-carousel" class="carousel slide header" data-bs-ride="carousel">
+        <nav class="navbar fixed-top navbar-expand-xl">
+            <div class="container">
+                <a class="navbar-brand mobile-logo" style="color: aliceblue;"> Kuan-Wei Chen | Pianist </a> 
+                <!-- <img src="images/logo.png" alt="Vista Pro" /> -->
+                <button class="navbar-toggler" data-target="#my-nav" onclick="myFunction(this)" data-toggle="collapse">
+                    <span class="bar1"></span> <span class="bar2"></span> <span class="bar3"></span> </button>
+
+                <div id="my-nav" class="collapse navbar-collapse">
+                    <div class="col-xl-4">
+                        <ul class="navbar-nav mx-auto logo-desktop">
+                            <li class="nav-item active" style="padding: 10px;">
+                                <div style="font-size: 28px; color: aliceblue; ">Kuan-Wei Chen | Pianist</div>
+                                <!-- <a class="nav-link" href="#">Kuan-Wei Chen | Pianist</a> -->
+                                <!-- <img src="images/logo.png" alt="Vista Pro" /> -->
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="row" style="margin-left: 6px; height: 40px; text-align: center; margin-top: 10px;">
+                            <div class="contact">
+                                <!-- <p class="text-left follow">Follow Us:</p> -->
+                                <ul class="navbar-nav float-left social-links" style="flex-direction: row;">
+
+                                    <div class="text-left follow" style="color: aliceblue; padding-top: 6px; justify-content: center; font-family: Optima-Regular;"> Contact : </div>
+                                    
+                                    <div class="col-md-2" style="padding: 0;">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="https://www.facebook.com/profile.php?id=100000727636441 " style="padding: 7px;"><i class="fab fa-facebook-f"></i></a>
+                                        </li>
+                                    </div>
+                                    <div class="col-md-2" style="padding: 0;">
+                                        <li class="nav-item"><a class="nav-link" href="mailto:kuanweichen2000@outlook.com" style="padding: 7px;"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+                                        </li>
+                                    </div>
+                                    <div class="col-md-2" style="padding: 0;">
+                                        <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/kuanwei_0131/?igshid=YmMyMTA2M2Y%3D" style="padding: 7px;"><i class="fab fa-instagram"></i></a>
+                                        </li>
+                                    </div>
+                                    <div class="col-md-2" style="padding: 0;">
+                                        <li class="nav-item"><a class="nav-link" href="https://www.youtube.com/@kuan-weichen7441" style="padding: 7px;"><i class="fab fa-youtube"></i></a>
+                                        </li>
+                                    </div>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-5">
+                        <ul class="navbar-nav menu-links bigt">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item bio">
+                                <a class="nav-link" href="#" >Biography</a>
+                                    <ul class="bio-menu">
+                                    <li><a href="./index2-ch.html">中文</a></li> 
+                                    <li><a href="./index2.html">English</a></li> 
+                                    </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index3_2.html">Concerts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index4.html">Repertoire</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index5.html">Videos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index6_3.html">Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index7_2.html">Contact</a>
+                            </li>
+                            
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <!-- <div class="actPic"><img src="https://i.ibb.co/nCPh8ZD/0089.jpg" alt="home-bg">   </div>  class="d-block w-75 home-bg"-->
+                
+                <div class="actPic">
+                    <img src="./photo/02.jpg"  class="d-block w-100 home-bg" alt="home-bg" alt="圖片描述">
+                    
+                </div>
+                <!-- <div class="actPic"><img  srcset="./photo/0089.jpg  2000w, ./photo/0089_2.jpg  300w"  class=" d-block w-100 home-bg " alt="home-bg"> </div> -->
+               
+                
+                <!-- <div class="carousel-caption d-md-block">   src="./photo/0089.jpg" -->
+                    <!-- <p class="frst-hrd"></p>
+                    <h5></h5>
+                    <p></p> -->
+
+                <!-- </div> -->
+
+
+            </div>
+            <div class="carousel-item">
+                <!-- <div class="actPic"><img  alt="home-bg" src="https://i.ibb.co/vjfPJ9G/0265.jpg">   </div> -->
+                <!-- <div class="actPic"><img  srcset="./photo/02.jpg 1200w, ./photo/02_2.jpg 400w " class="d-block w-100 home-bg" alt="home-bg"> </div> -->
+                <div class="actPic2">
+                    <img src="./photo/0199.jpg"  class="d-block w-100 home-bg" alt="home-bg" alt="圖片描述">
+                </div>
+
+                <!-- <div class="carousel-caption d-md-block"> src="./photo/02.jpg"-->
+                    <!-- <p class="frst-hrd">Everyone is Photogenic</p>
+                    <h5>Today’s SPECIAL MOMENTS.</h5>
+                    <p>Creating a timeless look, coupled with a flawless moment</p> -->
+
+                <!-- </div> -->
+            </div>
+            <div class="carousel-item">
+                <!-- <div class="actPic"><a href="https://ibb.co/TLWzqpH"><img src="https://i.ibb.co/g9kbh4g/0299.jpg"  alt="home-bg"></a></div>
+                 -->
+                 <!-- <div class="actPic"><img  srcset="./photo/03.jpg 1200w, ./photo/03_2.jpg 400w "  class="d-block w-100 home-bg" alt="home-bg"> </div> -->
+                 <div class="actPic3">
+                    <!-- <img src="./photo/03.jpg "  class="d-block w-100 home-bg" alt="home-bg" alt="圖片描述"> -->
+                    <img src="./photo/0089.jpg"  class="d-block w-100 home-bg" alt="home-bg" alt="圖片描述">
+                </div>
+                <!-- <div class="carousel-caption d-md-block"> src="./photo/03.jpg" -->
+                    <!-- <p class="frst-hrd">Everyone is Photogenic</p>
+                    <h5>Today’s SPECIAL MOMENTS.</h5>
+                    <p>Creating a timeless look, coupled with a flawless moment</p> -->
+
+                <!-- </div> -->
+            </div>
+            <!-- <div class="scroll-button">
+                <p>Scroll down to see more...</p>
+                <a href="./index2.html" class="page-scroll">
+                    <img src="images/arrows-down.png" alt="arrow down" />
+                </a>
+
+            </div> -->
+        </div>
+        <ul class="carousel-indicators">
+            <li class="active" data-target="#fh5co-hero-carousel" data-slide-to="0" aria-current="location"></li>
+            <li data-target="#fh5co-hero-carousel" data-slide-to="1"></li>
+            <li data-target="#fh5co-hero-carousel" data-slide-to="2"></li>
+        </ul>
+    </div>
+    <div id="content">
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <div> <p id="tt1">Concert schedule</p> </div>
+        <div id="box" style="text-align: center; padding-top: 6%;">
+            <div id="date1" >July 8, 2023 19:30</div>
+            <div id="name1" style=" font-weight: 900;">Chamber Concert Taipei, Taiwan</div>
+            <div id="name1">C. Debussy Piano Trio in G Major, L.5</div>
+            <div id="name1">M. Ravel Piano Trio in A Minor </div>
+            <div id="name1" style=" font-weight: 900; margin-top: 1%; "> <a href="https://www.opentix.life/event/1663068456018432001"> <button class="custom-btn btn-3"> <span>Ticket</span> </button> </a> </div>
+            <br>
+            <br>
+            <div id="date1" style="margin-top: 5%;">July 30, 2023 14:30</div>
+            <div id="name1" style=" font-weight: 900; ">Recital Yunlin, Taiwan</div>
+            <div id="name1">W. A. Mozart: Rondo in A Minor, K. 511</div>
+            <div id="name1">F. Chopin: Sonata No. 2 in B Minor, Op. 35</div>
+            <div id="name1">F. Chopin: 4 Mazurkas, Op. 33</div>
+            <div id="name1">M. Ravel: Gaspard de la Nuit, M. 55</div>
+            <div id="name1" style=" font-weight: 900; margin-top: 1%;"> <a href="https://www.opentix.life/event/1660585652661010433"> <button class="custom-btn btn-3"> <span>Ticket</span> </button> </a> </div>
+            <br>
+            <div id="date1" style="margin-top: 5%;">August 5, 2023 14:30</div>
+            <div id="name1" style=" font-weight: 900; ">Recital Taipei, Taiwan</div>
+            <div id="name1">W. A. Mozart: Rondo in A Minor, K. 511</div>
+            <div id="name1">F. Chopin: Sonata No. 2 in B Minor, Op. 35</div>
+            <div id="name1">F. Chopin: 4 Mazurkas, Op. 33</div>
+            <div id="name1">M. Ravel: Gaspard de la Nuit, M. 55</div>
+            <div id="name1" style=" font-weight: 900; margin-top: 1%;"> <a href="https://www.opentix.life/event/1660585652661010433"> <button class="custom-btn btn-3"> <span>Ticket</span> </button> </a> </div>
+            <br>
+            <div id="date1" style="margin-top: 5%;">August 20, 2023, 14:00 & 16:00</div>
+            <div id="name1" style=" font-weight: 900; ">Kids' Concert. Taichung, Taiwan</div>
+            <div id="name1">Several pieces for four hands and two pianos by Haydn, Grieg, Saint-Saens, and Tchaikovsky.</div>
+            <!-- <div id="name1">F. Chopin: Sonata No. 2 in B Minor, Op. 35</div>
+            <div id="name1">F. Chopin: 4 Mazurkas, Op. 33</div>
+            <div id="name1">M. Ravel: Gaspard de la Nuit, M. 55</div> -->
+            <div id="name1" style=" font-weight: 900; margin-top: 1%;"> <a href="https://s.opentix.life/p/P2837782b"> <button class="custom-btn btn-3"> <span>Ticket</span> </button> </a> </div>
+        </div>
+        
+            
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+      
+
+
+    <div class="container-fluid copy">
+        <div class="col-lg-12">
+            <p>&copy; Editor by <a href="https://s07362022.github.io/" target="_blank" style="color: #0e0e0e;">Harden Li</a></p>
+            <p>&copy; Design by FreeHTML5.co</a>.</p>
+            
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/isotope-docs.min.js?6"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+    $(document).ready(function() {
+
+        $(".toggle-accordion").on("click", function() {
+          var accordionId = $(this).attr("accordion-id"),
+            numPanelOpen = $(accordionId + ' .collapse.in').length;
+          
+          $(this).toggleClass("active");
+      
+          if (numPanelOpen == 0) {
+            closeAllPanels(accordionId);
+          } else {
+            
+            openAllPanels(accordionId);
+          }
+        })
+        openAllPanels = function(aId) {
+          console.log("setAllPanelOpen");
+          $(aId + ' .panel-collapse:not(".in")').collapse('show');
+        console.log(aId);
+
+        }
+        closeAllPanels = function(aId) {
+          console.log("setAllPanelclose");
+          $(aId + ' .panel-collapse.in').collapse('hide');
+        console.log(aId);
+
+        }
+           
+      });</script>
+</body>
+
+</html>
